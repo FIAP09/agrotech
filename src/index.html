@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroTech Grupo09 - Início</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <script>
+  const toggle = document.getElementById('menu-toggle');
+  const links = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    links.classList.toggle('active');
+  });
+</script>
+
+  <nav class="navbar">
+  <div class="logo">
+  <img src="assets/img/logo.png" alt="Logo AgroTech Grupo 09">
+</div>
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html" class="btn-nav">Home</a></li>
+    <li><a href="tecnologias.html" class="btn-nav">Tecnologias</a></li>
+    <li><a href="orgaos_e_iniciativas.html" class="btn-nav">Órgãos e Iniciativas</a></li>
+    <li><a href="sobre_nos.html" class="btn-nav">Sobre Nós</a></li>
+    <li><a href="contato.html" class="btn-nav">Contato</a></li>
+  </ul>
+</nav>
+
+  <section class="banner" id="inicio">
+    <div class="banner-texto">
+      <h1>Tecnologias no Agronegócio</h1>
+      <p>Inovação, sustentabilidade e o futuro do campo brasileiro.</p>
+    </div>
+  </section>
+
+  <section class="intro">
+    <img src="assets/img/intro.jpg" alt="Plantação moderna">
+    <div class="texto">
+      <h2>Transformando o campo com tecnologia</h2>
+      <p>O agronegócio brasileiro vem se modernizando com o uso de drones, sensores, Internet das Coisas (IoT) e inteligência artificial. Essas inovações melhoram a produtividade, reduzem custos e minimizam impactos ambientais, garantindo um futuro mais sustentável para o campo.</p>
+      <div class="botaoyt">
+      <button class="BotaoYT">
+      <a href="https://www.youtube.com/watch?v=FxOmH_Vwo1U" role="button">Assista a apresentação aqui!</a>
+      </button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Grupo 09 FIAP | Tecnologias no Agronegócio</p>
+  </footer>
+
+  <script src="assets/js/menu.js"></script>
+
+</body>
+</html>

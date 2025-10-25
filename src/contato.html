@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fale Conosco - AgroTech Grupo09</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <script>
+  const toggle = document.getElementById('menu-toggle');
+  const links = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    links.classList.toggle('active');
+  });
+</script>
+
+
+  <nav class="navbar">
+    <div class="logo">
+  <img src="assets/img/logo.png" alt="Logo AgroTech Grupo 09">
+</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tecnologias.html">Tecnologias</a></li>
+      <li><a href="orgaos_e_iniciativas.html">Órgãos e Iniciativas</a></li>
+      <li><a href="sobre_nos.html">Sobre Nós</a></li>
+      <li><a href="contato.html" class="active">Contato</a></li>
+    </ul>
+  </nav>
+    <section class="Blank" style="height: 50px;"></section>
+  <section class="contato">
+    <h2>Fale Conosco</h2>
+    <form action="#" method="POST" novalidate>
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required minlength="3" placeholder="Digite seu nome completo">
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required placeholder="exemplo@dominio.com">
+      </div>
+      <div class="form-group">
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required minlength="10" placeholder="Digite sua mensagem..."></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+    <p>Envie sugestões ou dúvidas para: <strong>contato@fiapgrupo09.com</strong></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Grupo 09 FIAP | Tecnologias no Agronegócio</p>
+  </footer>
+  <script src="assets/js/menu.js"></script>
+</body>
+</html>
