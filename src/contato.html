@@ -36,20 +36,20 @@
     <form action="#" method="POST" novalidate>
       <div class="form-group">
         <label for="fullName">Nome</label>
-<input id="Nome" name="Nome" type="text" autocomplete="nome" placeholder="Digite seu nome" required aria-describedby="NomeHelp NomeError" required>
+<input id="Nome" name="Nome" type="text" required minlength="1" autocomplete="nome" placeholder="Digite seu nome" required aria-describedby="NomeHelp NomeError" required>
 <div id="NomeHelp" class="hint"></div>
 <div id="NomeError" class="error" aria-live="polite">
       </div>
       </div>
       <div class="form-group">
         <label for="nome">Sobrenome:</label>
-        <input id="Sobrenome" name="Sobrenome" type="text" autocomplete="Sobrenome" placeholder="Digite seu sobrenome" required aria-describedby="SobrenomeHelp SobrenomeError" required>
+        <input id="Sobrenome" name="Sobrenome" required minlength="1" type="text" autocomplete="Sobrenome" placeholder="Digite seu sobrenome" required aria-describedby="SobrenomeHelp SobrenomeError" required>
 <div id="SobrenomeHelp" class="hint"></div>
 <div id="SobrenomeError" class="error" aria-live="polite">
       </div>
       <div class="form-group">
         <label for="email">E-mail:</label>
-        <input id="email" name="email" type="email" autocomplete="email" placeholder="Digite seu e-mail" required aria-describedby="emailHelp emailError" required>
+        <input id="email" name="email" type="email" required minlength="1" autocomplete="email" placeholder="Digite seu e-mail" required aria-describedby="emailHelp emailError" required>
       </div>
       <div class="form-group">
         <label for="mensagem">Mensagem:</label>

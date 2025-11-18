@@ -378,3 +378,11 @@ footer {
   font-weight: bold;
   transition: 0.3s;
 }
+
+.sobreagro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 60px 10%;
+}
