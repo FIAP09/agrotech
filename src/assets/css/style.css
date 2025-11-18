@@ -381,8 +381,14 @@ footer {
 
 .sobreagro {
   display: flex;
+  justify-content: center; 
+  gap: 20px;               
+  margin-top: 20px;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-  padding: 60px 10%;
+}
+
+.sobreagro img {
+  width: 350px;            
+  border-radius: 10px;
+  
 }
