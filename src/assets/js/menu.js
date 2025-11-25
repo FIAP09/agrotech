@@ -3,13 +3,10 @@ const navLinks = document.getElementById('nav-links');
 menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
 document.getElementById("contatoForm").addEventListener("submit", function(event){
     let valid = true;
-
     const nomeInput = document.getElementById("Nome");
     const nomeError = document.getElementById("NomeError");
     let nome = nomeInput.value.trim();
-
     nomeError.textContent = "";
-
     if(nome === ""){
         nomeError.textContent = "O nome completo não pode estar em branco.";
         valid = false;
@@ -24,9 +21,7 @@ document.getElementById("contatoForm").addEventListener("submit", function(event
                 valid = false;
             }
         }
-    }
-
-    
+    } 
     const emailInput = document.getElementById("email");
     const emailError = document.getElementById("emailError");
     emailError.textContent = "";
@@ -41,8 +36,6 @@ document.getElementById("contatoForm").addEventListener("submit", function(event
             valid = false;
         }
     }
-
-    
     const msgInput = document.getElementById("mensagem");
     const msgError = document.getElementById("mensagemError");
     msgError.textContent = "";
