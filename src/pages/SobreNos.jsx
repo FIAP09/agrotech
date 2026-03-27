@@ -1,25 +1,12 @@
 const membros = [
   {
-    nome: "Felipe",
-    img: "/assets/img/felipe.jpg",
-    alt: "Foto de Felipe",
-    href: "https://www.instagram.com/devfelipekinder/",
+    nome: "Hugo",
+    img: "/assets/img/hugo.jpg",
+    alt: "Foto de Hugo",
+    href: "https://www.instagram.com/hugo.linhares_/",
     texto: (
       <>
-        Hacker Whitehat desde os 12 anos, empresário no ramo de chapas de ferro e aço no estado de São Paulo. (
-        <a href="https://www.atlantaferroeaco.com.br" target="_blank" rel="noreferrer">
-          www.atlantaferroeaco.com.br
-        </a>
-        ) Dev Fullstack formado pela Digital House. CEH - Certified Ethical Hacker pela Digital House. Participante de
-        projetos como{" "}
-        <a href="https://devscout.app/pt" target="_blank" rel="noreferrer">
-          DevScout
-        </a>{" "}
-        e antiga{" "}
-        <a href="https://www.baixou.com.br" target="_blank" rel="noreferrer">
-          Baixou
-        </a>{" "}
-        (#desativado)
+        Desenvolvedor backend com 3 anos de experiência, especializado na criação de sites.
       </>
     ),
   },
@@ -52,18 +39,6 @@ const membros = [
     alt: "Foto de Thiago",
     href: "https://www.instagram.com/thsaccomani",
     texto: <>Bacharel em Direito. Atualmente, em transição para a área de Tecnologia da Informação.</>,
-  },
-  {
-    nome: "Lucas Sanches Coelho",
-    img: "/assets/img/lucas.jpg",
-    alt: "Foto de Lucas",
-    href: "https://www.instagram.com/sancheesc",
-    texto: (
-      <>
-        Gestor de uma escola e de uma empresa de peças automotivas, com experiência em administração estratégica de
-        equipes, processos e resultados. Atuei como suporte de TI em ambiente educacional. Domino Excel e curso FIAP EAD.
-      </>
-    ),
   },
 ];
 
