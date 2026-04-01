@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { Sun, Moon } from "lucide-react";
 
-export default function Navbar() {
+export default function Navbar({ theme, toggleTheme }) {
   const [open, setOpen] = useState(false);
 
   function close() {
@@ -17,8 +18,6 @@ export default function Navbar() {
       <button
         className="menu-toggle"
         type="button"
-        aria-label="Abrir/fechar menu"
-        aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
       >
         &#9776;
@@ -26,33 +25,45 @@ export default function Navbar() {
 
       <ul
         className="nav-links"
-        id="nav-links"
         style={open ? { display: "block" } : undefined}
       >
         <li>
-          <NavLink to="/" className="btn-nav" onClick={close} end>
+          <NavLink to="/" onClick={close} end>
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/tecnologias" className="btn-nav" onClick={close}>
+          <NavLink to="/tecnologias" onClick={close}>
             Tecnologias
           </NavLink>
         </li>
         <li>
-          <NavLink to="/orgaos-e-iniciativas" className="btn-nav" onClick={close}>
+          <NavLink to="/orgaos-e-iniciativas" onClick={close}>
             Órgãos e Iniciativas
           </NavLink>
         </li>
         <li>
-          <NavLink to="/sobre-nos" className="btn-nav" onClick={close}>
+          <NavLink to="/sobre-nos" onClick={close}>
             Sobre Nós
           </NavLink>
         </li>
         <li>
-          <NavLink to="/contato" className="btn-nav" onClick={close}>
+          <NavLink to="/contato" onClick={close}>
             Fale Conosco
           </NavLink>
+        </li>
+
+        {/* BOTÃO DE TEMA */}
+        <li>
+          <button
+            onClick={() => {
+              console.log("clicou");
+              toggleTheme();
+            }}
+            className="theme-btn"
+          >
+            {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
+          </button>
         </li>
       </ul>
     </nav>
