@@ -12,7 +12,7 @@
   --radius: 16px;
 }
 
-/* 🌙 DARK MODE PROFISSIONAL */
+/* dark mode */
 body.dark {
   --bg: #0b0d10;
   --surface: #12151a;
@@ -25,7 +25,7 @@ body.dark {
   --shadow-soft: 0 10px 20px rgba(0,0,0,.4);
 }
 
-/* 🌞 LIGHT MODE */
+/* light mode */
 body.light {
   --bg: #f3f7f1;
   --surface: #ffffff;
@@ -33,7 +33,7 @@ body.light {
   --muted: #4b6b4f;
 }
 
-/* 🌍 BASE */
+/* BASE */
 html, body{
   background: var(--bg);
   color: var(--text);
@@ -141,7 +141,7 @@ body.dark .theme-btn{
   background: linear-gradient(90deg, rgba(0,0,0,.55), rgba(0,0,0,.2));
 }
 
-/* DARK HERO MAIS FORTE */
+/* DARK HERO */
 body.dark .banner::after{
   background: linear-gradient(90deg, rgba(0,0,0,.75), rgba(0,0,0,.4));
 }
