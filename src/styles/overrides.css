@@ -26,16 +26,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   outline-offset: 3px;
 }
 
-/* ===== NAVBAR ===== */
-.navbar{
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 18px rgba(0,0,0,.10);
-}
+
 
 .navbar .logo img{
+  
   width: 86px; /* ajuste se ficar grande */
   height: auto;
   filter: drop-shadow(0 6px 10px rgba(0,0,0,.20));
@@ -92,10 +86,40 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 /* ===== SEÇÕES ===== */
-.intro, .tecnologias, .links, .sobre, .contato{
-  max-width: 1100px;
-  margin: 0 auto;
+.intro{
   padding: 36px 18px;
+  max-width: 1100px;
+}
+
+.tecnologias{
+  margin: 90px auto;
+  padding: 36px 18px;
+}
+
+.links{
+  max-width: 1000px;
+  padding-top: 1px;
+  margin: -10px auto;
+}
+
+.sobre{
+  margin: 8px auto;
+}
+
+.membros{
+  background: var(--surface);
+  max-width: 1100px;
+  margin: 10px auto;
+  padding: 60px 10%;
+  text-align: center;
+  border-radius: 19px;
+  box-shadow: 1px 1px 10px rgba(0,0,0,.08);
+}
+
+.contato{
+  max-width: 1100px;
+  padding: 36px 18px;
+  margin: 0 auto;
 }
 
 /* ===== BOTÕES  ===== */
@@ -232,13 +256,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   filter: brightness(1.02);
 }
 
-/* ===== FOOTER ===== */
-footer{
-  margin-top: 40px;
-  background: #1e5f24;
-  color: rgba(255,255,255,.92);
-  box-shadow: 0 -10px 20px rgba(0,0,0,.10);
-}
+
 
 /* ===== RESPONSIVO ===== */
 @media (max-width: 720px){
