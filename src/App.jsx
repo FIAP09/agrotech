@@ -31,12 +31,12 @@ useEffect(() => {
 }, [theme]);
 
 useEffect(() => {
-  document.body.className = theme;
+  document.body.classList.remove("light", "dark");
+document.body.classList.add(theme);
 }, [theme]);
 
   return (
-  <div className={theme}>
-    <Routes>
+      <Routes>
       <Route element={<Layout theme={theme} toggleTheme={toggleTheme} />}>
         <Route path="/" element={<Home />} />
         <Route path="/tecnologias" element={<Tecnologias />} />
@@ -46,6 +46,5 @@ useEffect(() => {
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
-  </div>
-);
+  );
 }
