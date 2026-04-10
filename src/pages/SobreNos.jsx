@@ -24,8 +24,7 @@ const membros = [
     href: null,
     texto: (
       <>
-        Desenvolvedor apaixonado por tecnologia e por criar soluções que ajudem outros devs e comunidades online. Tenho
-        experiência com JavaScript e Python, além de atuar em projetos com React e Node.js. Canal no{" "}
+        Desenvolvedor apaixonado por tecnologia. Experiência com JavaScript e Python, além de atuar em projetos com React e Node.js. Canal no{" "}
         <a href="https://www.youtube.com/@audibert" target="_blank" rel="noreferrer">
           YouTube
         </a>
@@ -41,6 +40,8 @@ const membros = [
     texto: <>Bacharel em Direito. Atualmente, em transição para a área de Tecnologia da Informação.</>,
   },
 ];
+
+
 
 export default function SobreNos() {
   return (
@@ -72,7 +73,7 @@ export default function SobreNos() {
         </div>
       </section>
 
-      <section className="tecnologias">
+      <section className="membros">
         <h2>Membros do Grupo</h2>
 
         <div className="cards">
