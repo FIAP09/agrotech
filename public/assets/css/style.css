@@ -13,20 +13,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/* 🔝 Navbar */
-.navbar {
-  background-color: #2e7d32;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  height: 11%;
-}
 
 .logo {
   display: flex;
@@ -106,13 +92,15 @@ body {
 /* 🌅 Banner */
 .banner {
   background: url("../img/background.jpg") center/cover no-repeat;
-  height: 85vh;
+  height: 93vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
   padding-top: 60px;
+  z-index: 1;
 }
 
 .banner-texto h1 {
@@ -184,12 +172,6 @@ body {
 
 .card:hover {
   transform: translateY(-5px);
-}
-
-.card img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
 }
 
 .card h3 {
@@ -336,15 +318,11 @@ button:hover {
 
 /* ⚙️ Rodapé */
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
+  background: #1b5e20;
   color: white;
   text-align: center;
-  padding: 10px 0;
-  z-index: 1000;
-  background: #1b5e20;
+  padding: 12px 0;
 }
 
 /* 📱 Responsividade extra */
@@ -359,6 +337,7 @@ footer {
   }
 
   .cards {
+    position: center;
     flex-direction: column;
     align-items: center;
   }
@@ -388,8 +367,7 @@ footer {
 }
 
 .sobreagro img {
-  width: 350px;            
+  width: 340px;        
   border-radius: 10px;
   
 }
-
