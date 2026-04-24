@@ -22,7 +22,7 @@ export default function Home() {
           <div className="botaoyt">
            <a
   className="BotaoYT"
-  href="https://youtu.be/BvzWUTvvHSE"
+  href=" https://youtu.be/FdXc9EUP04I"
   target="_blank"
   rel="noreferrer"
 >
